@@ -14,10 +14,11 @@ List<List<TransactionEntity>> GroupTransactions(List<TransactionEntity> transact
             dic[transaction.PaymentMethod].Add(transaction);
 
         // Em caso de necessidade de contar um chave unica...
-        if (!dic.ContainsKey(transaction.PaymentMethod))
-            dic.Add($"{transaction.Id}-{transaction.PaymentMethod}", new List<TransactionEntity> { transaction });
-        else
-            dic[$"{transaction.Id}-{transaction.PaymentMethod}"].Add(transaction);
+        
+        // if (!dic.ContainsKey(transaction.PaymentMethod))
+        //     dic.Add($"{transaction.Id}-{transaction.PaymentMethod}", new List<TransactionEntity> { transaction });
+        // else
+        //     dic[$"{transaction.Id}-{transaction.PaymentMethod}"].Add(transaction);
     }
 
     return dic.Select(x => x.Value).ToList();
