@@ -1,0 +1,108 @@
+O objetivo do problema é resolver o problema de agrupamento entre as transações
+efetuadas por determinados usuários. O agrupamento deverá ser feito pelo campo payment_method.
+
+Input: [
+    {
+        id: 1,
+	  payment_date: "2022-06-21"
+        payment_method: "AA"
+	  payment_value: 2400.00,
+    },
+    {
+        id: 2,
+	  payment_date: "2022-06-18"
+        payment_method: "AB"
+	  payment_value: 100.00,
+    },
+    {
+        id: 3,
+	  payment_date: "2022-06-10"
+        payment_method: "AA"
+	  payment_value: 2500.00,
+    },
+    {
+        id: 4,
+	  payment_date: "2022-06-30"
+        payment_method: "AA"
+	  payment_value: 200.00,
+    },
+    {
+        id: 5,
+	  payment_date: "2022-06-17"
+        payment_method: "AB"
+	  payment_value: 2500.00,
+    },
+    {
+        id: 6,
+	  payment_date: "2022-06-22"
+        payment_method: "AB"
+	  payment_value: 2100.00,
+    },
+    {
+        id: 7,
+	  payment_date: "2022-06-22"
+        payment_method: "AB"
+	  payment_value: 500.00,
+    },
+    {
+        id: 8,
+	  payment_date: "2022-06-22"
+        payment_method: "AB"
+	  payment_value: 1500.00,
+    }
+]
+
+Output: [
+    [
+        {
+	      id: 1,
+	  	payment_date: "2022-06-21"
+        	payment_method: "AA"
+	  	payment_value: 2400.00,
+	  },
+	  {
+            id: 3,
+	      payment_date: "2022-06-10"
+            payment_method: "AA"
+	      payment_value: 2500.00,
+        },
+	  {
+            id: 4,
+	      payment_date: "2022-06-30"
+            payment_method: "AA"
+	      payment_value: 200.00,
+    	  },
+    ],
+    [
+	  {
+	      id: 2,
+	  	payment_date: "2022-06-18"
+        	payment_method: "AB"
+	  	payment_value: 100.00,
+	  },
+	  {
+            id: 5,
+	  	payment_date: "2022-06-17"
+        	payment_method: "AB"
+	  	payment_value: 2500.00,
+        },
+	  {
+        	id: 6,
+	  	payment_date: "2022-06-22"
+        	payment_method: "AB"
+	  	payment_value: 2100.00,
+    	  },
+        {
+        	id: 7,
+	  	payment_date: "2022-06-22"
+        	payment_method: "AB"
+	  	payment_value: 500.00,
+        },
+	  {
+        	id: 8,
+	  	payment_date: "2022-06-22"
+        	payment_method: "AB"
+	  	payment_value: 1500.00,
+        }
+    ]
+]
