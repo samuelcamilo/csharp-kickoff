@@ -1,0 +1,14 @@
+Palíndromo é uma palavra, frase ou número que permanece igual quando lida de trás para diante. 
+Por extensão, palíndromo é qualquer série de elementos com simetria linear, ou seja, 
+que apresenta a mesma sequência de unidades nos dois sentidos.
+
+Problema: Desenvolva um algoritmo que leia um texto e verifique se é um palíndromo ou não. A resposta deverá
+ser True ou False.
+
+Exemplos: 
+
+    - A base do teto desaba
+    - A cara rajada da jararaca
+    - Acuda cadela da Leda caduca
+    - A diva em Argel alegra-me a vida
+    - Socorram-me, subi no ônibus em Marrocos
